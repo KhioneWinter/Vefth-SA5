@@ -2,7 +2,7 @@ using CloudyWeather.API.Environment;
 
 var builder = WebApplication.CreateBuilder(args);
 
-DotEnv.Load(Path.Combine(Directory.GetCurrentDirectory(), ".env.local"));
+DotEnv.Load(Path.Combine(Directory.GetCurrentDirectory(), "SYS_ENVIRONMENT=LOCAL"));
 
 var config =
     new ConfigurationBuilder()
